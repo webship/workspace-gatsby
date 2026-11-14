@@ -27,6 +27,15 @@
   "workspacePlugin": {
     "name": "gatsby",
     "label": "Gatsby",
+    "needs": [
+      [
+        "dev",
+        "test",
+        "sandboxes",
+        "demos"
+      ],
+      "ai-agents"
+    ],
     "commands": {
       "types": [
         "sites"
