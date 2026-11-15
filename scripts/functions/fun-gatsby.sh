@@ -19,7 +19,7 @@
 
 # The step pack a Gatsby project is tested with, and the release line it is required at.
 readonly GATSBY_STEPS_PACKAGE='@webship-js/gatsby-steps';
-readonly GATSBY_STEPS_VERSION='^2.0.2';
+readonly GATSBY_STEPS_VERSION='^2.1.0';
 
 # Where the site lives in the web container, and the port its server listens on.
 readonly GATSBY_SITE='/var/www/html/site';

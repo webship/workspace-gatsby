@@ -147,9 +147,10 @@ landmarks and accessibility audits are used as they are and never redefined for 
 ## Rules
 
 - **No platform name in a step phrase.** A step says what a person does or sees: `the site should
-  be a production build`, `I should see a hydrated page`. The pack also has steps that name the
-  generator of the page; a feature of this workspace leaves them out, and a custom step never
-  names the product.
+  be a production build`, `I should see a hydrated page`. The name of the generator is a value of a
+  step, never a part of its phrase: `the page generator should start with "Gatsby"`,
+  `the page generator version should start with "<version>"`. A custom step never names the
+  product.
 - **No account, no password, no secret in a feature file.** The site has no accounts, and a
   service it talks to is tested with its own pack on its own project.
 - **No selector when a step says it**: `I should see an optimized image`, not a selector of the

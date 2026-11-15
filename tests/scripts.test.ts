@@ -99,7 +99,7 @@ test('the testing hook adds the step pack and a first feature to a Gatsby projec
   const r = run();
   assert.strictEqual(r.status, 0, r.stderr + r.stdout);
   const pkg = JSON.parse(fs.readFileSync(path.join(p.dir, 'package.json'), 'utf8'));
-  assert.strictEqual(pkg.devDependencies['@webship-js/gatsby-steps'], '^2.0.2');
+  assert.strictEqual(pkg.devDependencies['@webship-js/gatsby-steps'], '^2.1.0');
   assert.strictEqual(pkg.devDependencies['webship-js'], '^2.0.6', 'what was there stays');
   assert.strictEqual(fs.readFileSync(path.join(p.dir, 'site', 'package.json'), 'utf8'), '{"name":"the-site","private":true}\n', 'the package.json of the site is not the suite\'s: it is left alone');
   const cucumber = fs.readFileSync(path.join(p.dir, 'cucumber.js'), 'utf8');
