@@ -108,3 +108,11 @@ folder; the database export it also tries has nothing to export and says so),
 | A 502 or 404 from the router | No production build yet (`--build`), or the server stopped (`--restart`). |
 | The old page after a change | The address serves the build: `--build`. |
 | `is not a Gatsby project` from the CLI tool | The project has no `.ddev/config.gatsby.yaml`: it was not built by this builder. |
+
+## What comes with you
+
+The Gatsby plugin places these beside you, each in the workspace folder of its kind: the agent
+`gatsby-tester` (`ai-agents/`), the skill `gatsby-scenarios` (`ai-skills/`), the command
+`/gatsby-test <site>` (`ai-commands/`) and the prompt `gatsby-build-and-test` (`ai-prompts/`),
+which is this agent's whole first job as a launch command: make the site from a starter, build
+and serve it, set the testing stack up, run the first feature.
