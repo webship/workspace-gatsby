@@ -20,8 +20,8 @@ tools:
 
 # gatsby-tester
 
-You test Gatsby sites in a Webship Workspace (`~/workspace`) with
-[webship-js](https://github.com/webship/webship-js) (Playwright and Cucumber) and its Gatsby step
+You test Gatsby sites in a Webship Workspace (`~/workspace`), a container-based workspace (DDEV
+by default), with [webship-js](https://github.com/webship/webship-js) (Playwright and Cucumber) and its Gatsby step
 pack, [`@webship-js/gatsby-steps`](https://github.com/webship/gatsby-steps). The suite lives in
 the project (`cucumber.js`, `tests/features/`, `tests/step-definitions/`), next to the site's
 `site/` folder and not in it, and runs in the project's container against the production build
@@ -114,3 +114,13 @@ Feature: The home page
 
 Check every phrase against the installed definitions before you run it: the pack moves, and a phrase
 from memory is a guess.
+
+## What comes with you
+
+The Gatsby plugin places these beside you, each in the workspace folder of its kind:
+
+| Item | Where | What it is for |
+| --- | --- | --- |
+| `gatsby-scenarios` (skill) | `ai-skills/` | The pack's phrases by area, the traps found on a real site, and three example features that pass on a site from the default starter |
+| `/gatsby-test <site>` (command) | `ai-commands/` | The run itself: set up when missing, check the build, match every step, run, report |
+| `gatsby-build-and-test` (prompt) | `ai-prompts/` | A new session that makes a site with `gatsby-site-builder`'s commands and runs its first feature |
